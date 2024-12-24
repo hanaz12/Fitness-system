@@ -1,0 +1,46 @@
+v/* ملف styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: #dcdcdc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* لتنسيق أقسام الـ FAQ */
+.accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: white;
+}
+
+.accordion-button {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.accordion-body {
+    font-size: 14px;
+    color: #555;
+}

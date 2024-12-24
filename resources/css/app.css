@@ -1,0 +1,350 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 400ms;
+  list-style:none ;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 1.9rem;
+  width:90vw;
+height:90vh;
+
+
+
+::selection{
+    background-color:rgb(141, 146, 161);
+    color:#fff;
+}
+}
+.body-login{
+    width:100vw;
+    height:100vh;
+    /* background-image: url('/images/loginbackground.jpg'); */
+    background-image: url('/images/test.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.body-signup{
+    width:100vw;
+    height:90vh;
+    background-image: url('/images/signup.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.loginpage{
+
+}
+.div-welcome-tittle{
+
+padding: 6rem 55rem;
+font-size: 2.6rem;
+color:rgb(63, 64, 69);
+
+}
+.div_form{
+    padding-top: 7rem;
+   padding-left: 10rem;
+   padding-bottom: 5rem;
+
+}
+.form1{
+   padding: 1.3rem 40rem;
+
+}
+input{
+    background-color: rgb(220, 221, 224);
+
+}
+.username-1 ,
+.pass-1{
+width:30rem;
+height:3.6rem;
+border:none;
+border-radius: 2rem;
+transition: 1s;
+margin: 0 50rem;
+
+}
+.username-1:hover ,.pass-1:hover{
+    border:1px solid rgb(84, 117, 145);
+    box-shadow:3px 3px 13px rgb(175, 170, 170);
+
+}
+.radio-btn{
+
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+  padding:6rem;
+margin-left: 20rem;
+
+
+}
+.div1
+{
+    margin:0 6rem;
+}
+input:focus + label{
+    color:rgb(105, 136, 162);
+}
+
+.submit-1{
+    width:18rem;
+    height:5rem;
+    margin:1.3rem 53rem;
+    padding:1rem 6rem 1rem 5rem ;
+    background-color: rgb(73, 104, 132);
+    color:#fff;
+    border:none;
+    border-radius: 3.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.b1{
+    margin:1.3rem 53rem;
+}
+.submit-1:hover{
+    background-color: rgb(125, 143, 158);
+    box-shadow:3px 3px 10px rgb(175, 170, 170);
+}
+.personal-info{
+
+    margin-top: 20rem;
+    margin-left:20rem;
+
+}
+input ,textarea{
+    background-color: rgb(220, 221, 224);
+
+
+}
+.username-2 ,
+.pass-2 ,
+.email ,
+.phone ,
+.f-name ,
+.l-name ,
+.address-2 ,
+.user_name-2
+{
+width:30rem;
+height:3.6rem;
+border:none;
+border-radius: 2rem;
+transition: 1s;
+}
+.textarea ,#goal{
+    width:30rem;
+    height:20rem;
+    border:none;
+    border-radius: 2rem;
+    transition: 1s;
+    padding: 2rem;
+}
+.username-2:hover ,.pass-2:hover ,.email:hover ,.phone:hover ,.textarea:hover ,.f-name:hover ,.l-name:hover ,.address-2:hover ,.user_name-2:hover ,
+#goal:hover{
+    border:1px solid rgb(84, 117, 145);
+    box-shadow:3px 3px 13px rgb(175, 170, 170);
+
+}
+.health-info{
+/* margin-bottom: 80rem; */
+ margin-right: 35rem;
+    float: right;
+     position:relative;
+    bottom:64rem;
+}
+
+.gender{
+
+   margin:0 20rem 0 -5rem;
+    padding:10rem;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+.male ,.female{
+    margin :0 6rem 0 1.5rem;
+}
+input:focus +label{
+    color:rgb(105, 136, 162);
+}
+ .age ,
+.weight ,
+.height{
+    width:30rem;
+height:3.6rem;
+border:none;
+border-radius: 2rem;
+transition: 1s;
+}
+.age:hover ,
+.weight:hover ,
+.height:hover{
+    border:1px solid rgb(84, 117, 145);
+    box-shadow:3px 3px 13px rgb(175, 170, 170);
+}
+.submit-2{
+    width:18rem;
+    height:5rem;
+    margin-left: 60rem;
+
+    /* padding:1rem 6rem 1rem 6rem ; */
+      position: relative;
+    bottom: 60rem;
+    background-color: rgb(73, 104, 132);
+    color:#fff;
+    border:none;
+    border-radius: 3.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 1s;
+}
+.submit-2:hover{
+    background-color: rgb(125, 143, 158);
+    box-shadow:3px 3px 10px rgb(175, 170, 170);
+}
+.admin-dashboard{
+    display: grid;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+  }
+
+  /* Sidebar Styles */
+  .sidebar {
+    width: 20%;
+    height:73.2rem;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+  }
+
+  .sidebar-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+  }
+
+  .sidebar-menu {
+    width: 100%;
+  }
+
+  .menu-item {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transition:  0.3s;
+
+  }
+
+  .menu-item:hover {
+    background-color: #34495e;
+  }
+
+  .menu-item.logout {
+    margin-top: auto;
+    background-color: #e74c3c;
+  }
+
+  .menu-item.logout:hover {
+    background-color: #c0392b;
+  }
+
+  /* Main Content Styles */
+  .main-content {
+    width: 60%;
+    flex: 1;
+    padding: 50px;
+    margin: 3rem;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+
+  .header p {
+    color: #7f8c8d;
+  }
+
+  .dashboard-cards {
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+
+
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .card h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+
+  .card p {
+    font-size: 1.2rem;
+    color: #27ae60;
+    font-weight: bold;
+  }
+  .btn-logout{
+    margin-top:60rem;
+    width:20rem;
+    height:5rem;
+    background-color:#34495e;
+    color:#fff;
+    border:none;
+    border-radius: 2.8rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .btn-logout:hover{
+    background-color: #52708d;
+    box-shadow:3px 3px 10px rgb(175, 170, 170);
+  }
+/* .btn btn-primary
+{
+    background-color:#34495e ;
+    color:#fff;
+    border:none;
+    border-radius: 2rem;
+    cursor: pointer;
+} */

@@ -1,0 +1,423 @@
+/* General Reset */
+body, h1, h2, p, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+
+
+}
+
+ header {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+   display: flex;
+  justify-content: space-between;
+   height:5rem;
+}
+.nav-bar{
+    width:40vw;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    position: fixed;
+    left:50vw;
+}
+.nav-bar ul li{
+padding:1rem;
+font-size: 1.6rem;
+display: inline-block;
+}
+.item{
+    text-decoration: none;
+    color:#c8adad;
+    transition: 1s;
+}
+ .item:hover{
+    color:#ffffff;
+}
+.nav_right{
+  display: flex;
+  margin-left: 20rem;
+
+
+}
+
+
+/* .alert-icon{
+    margin-top:1rem;
+    margin-left: 2rem;
+    padding-right: 20px;
+    cursor: pointer;
+
+} */
+#alert{
+   background-color:  #ece4e4;
+   border:1px solid  #ece4e4;
+   border-radius: 1rem;
+   width:4rem;
+   margin-top:1rem;
+}
+#alert-icon{
+    color:#615d57;
+}
+ #dropdownMenuButton{
+    padding: 5px 5px;
+    margin-top:1rem;
+    margin-right: 4rem;
+     background-color: #ece4e4;
+     color:#333;
+     border-color:#19111300;
+     border-style: none;
+    width:10rem;
+}
+#dropdownMenuButton:hover{
+    background-color:#fff;
+    border-color: #555555;
+    box-shadow: #ddd;
+}
+
+
+.drop_btn{
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    border: none;
+}
+.drop_btn:hover{
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-style: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+header h1{
+    margin-top:10px;
+}
+.trainee-section {
+    margin-bottom: 30px;
+}
+
+.trainee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.trainee-table th, .trainee-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.trainee-table thead {
+    background-color: #333;
+    color: #fff;
+}
+.trainee-table tbody{
+    background: #fff;
+    color: #333;
+}
+.action{
+    width:4.5rem;
+    background-color: #555555;
+    color:#fbf0f0;
+    border-radius: 3rem;
+    padding:3px;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.action:hover{
+    background-color: #737171;
+    color:#fff;
+    border:1px solid rgba(144, 128, 127, 0.568);
+    box-shadow:3px 3px 13px rgb(164, 127, 127);
+}
+.group {
+    display: flex;
+    align-items: center;
+    position: relative;
+     line-height: 28px;
+    max-width: 450px;
+    margin-left:24rem;
+   }
+   .title-icon-search{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+   }
+   #filter-no-plan{
+    width:18rem;
+    background-color: #413f3f;
+    color:#efebeb;
+    padding:0.5rem;
+    /* margin:2rem; */
+    margin-left:51rem;
+    margin-top:3rem;
+    border:none;
+    border-radius: 1rem;
+    cursor:pointer;
+    font-size: 1.1rem;
+    transition: 0.8s;
+   }
+   #filter-no-plan:hover{
+    background-color: #737171;
+    color:#fff;
+    border:1px solid rgba(144, 128, 127, 0.568);
+    box-shadow:3px 3px 13px rgb(164, 127, 127);
+   }
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(201, 194, 157, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+/* page of manage plans */
+
+.personal-info{
+    margin:1rem;
+    width:40%;
+    height:100%;
+    border:solid 1px #9e9ea7;
+    background-color: #f0eae553;
+}
+ .bi-person-circle{
+    margin-top: 5rem;
+    margin-left:5rem;
+ }
+ .form-personal-info{
+    margin:4rem;
+    margin-top:2rem;
+}
+ input{
+
+    padding:10px;
+   border:none;
+   width:15rem;
+   height:2rem;
+   background-color: #fefcfa53;
+}
+textarea{
+    margin-top:2rem;
+    padding:0px;
+    width:15rem;
+    height:2rem;
+    background-color: #fefcfa53;
+    border:solid 1px #7d7d7853;
+
+}
+.contact-trainee{
+    width:10rem;
+    height: 2rem;
+    margin-left:20rem;
+    margin-top:1rem;
+   padding:1px;
+   border:none;
+   border-radius: 3rem;
+   background-color: #2a2929;
+   color: #ddd;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.contact-trainee:hover{
+    background-color: #534f4f;
+    color:#fff;
+    border:1px solid rgba(144, 128, 127, 0.568);
+    box-shadow:3px 3px 13px rgb(164, 127, 127);
+}
+.plans{
+
+   margin-left: 40rem;
+   /* position: absolute;
+    bottom:1rem; */
+   display:flex;
+   flex-flow:row wrap;
+
+
+}
+
+.card{
+    min-height:43.5rem;
+    width:44rem;
+    padding:3rem;
+    margin-left:6rem;
+    margin-top:-49rem;
+    background-color: #f0eae553;
+
+}
+.card h3{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-right:2rem;
+    font-size: 1.9rem;
+}
+.card p{
+    font-size: 1.4rem;
+}
+  .update-plan{
+     width:27rem;
+    padding:4px;
+    border:none;
+    border-radius: 2rem;
+    background-color: #2a2929;
+    color:#fff;
+    cursor: pointer;
+    margin-top:9rem;
+    margin-left:4.6rem;
+    transition: 0.5s;
+}
+.update-plan:hover{
+    background-color: #534f4f;
+    border:1px solid rgba(87, 71, 70, 0.568);
+    box-shadow:3px 3px 13px rgb(120, 89, 89);
+}
+.delete-plan{
+    width:27rem;
+    margin-top: 1rem;
+    padding:4px;
+    border:none;
+    border-radius: 2rem;
+    background-color: #e01616;
+    color:#fff;
+    margin-left:4.5rem;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.delete-plan:hover{
+    background-color: #fa2424;
+    border:1px solid rgba(178, 114, 111, 0.568);
+    box-shadow:3px 3px 13px rgb(157, 109, 109);
+}
+/* .add-plan{
+    width:27rem;
+    padding:8px;
+    margin-left: 3rem;
+    padding-left:10rem;
+    font-size: 1.4rem;
+    border:none;
+    border-radius: 2rem;
+    background-color: #2a2929;
+    color:#fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.add-plan:hover{
+    background-color: #534f4f;
+    border:1px solid rgba(87, 71, 70, 0.568);
+    box-shadow:3px 3px 13px rgb(120, 89, 89);
+} */
+
+
+ /* edit page */
+.btn-success{
+    width:27rem;
+    height:2.5rem;
+    padding:4px;
+    margin-left: 5.5rem;
+    margin-top:2rem;
+    border:none;
+    border-radius: 2rem;
+    background-color: #2a2929;
+    color:#fff;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.4rem;
+}
+.btn-success:hover{
+    background-color: #534f4f;
+    border:1px solid rgba(87, 71, 70, 0.568);
+    box-shadow:3px 3px 13px rgb(120, 89, 89);
+}
+.btn{
+    width:27rem;
+    height:2.5rem;
+    padding:4px;
+    margin-left:4rem;
+    margin-top:32rem;
+    border:none;
+    border-radius: 2rem;
+    background-color: #2a2929;
+    color:#fff;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.4rem;
+}
+.btn:hover{
+    background-color: #534f4f;
+    border:1px solid rgba(87, 71, 70, 0.568);
+    box-shadow:3px 3px 13px rgb(120, 89, 89);
+}
+
+ .form-control-desc{
+    height:10rem;
+    width:40rem;
+    background-color: #fff;
+    line-height: 28px;
+padding: 0 1rem;
+padding-left: 2.5rem;
+border: 2px solid transparent;
+border-radius: 8px;
+outline: none;
+
+color: #0d0c22;
+transition: .3s ease;
+}
+
+.form-control-desc::placeholder {
+color: #9e9ea7;
+}
+
+.form-control-desc:focus, .form-control-des:hover {
+outline: none;
+border-color: rgba(201, 194, 157, 0.4);
+background-color: #fff;
+box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}

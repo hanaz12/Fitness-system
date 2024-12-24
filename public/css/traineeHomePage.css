@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    /* background-color: rgb(110, 106, 105); */
+
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: .5s;
+}
+button{
+    border-style: none;
+    background-color: #55555500;
+}
+.container {
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.550), rgba(0, 0, 0, 0.550)), url('/images/homepage.avif');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    width: 100%; */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.480), rgba(0, 0, 0, 0.480)), url('/images/homepage.avif');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+nav::after,
+nav::before {
+    content: "";
+    margin: 1.8rem;
+
+}
+
+.logo {
+    color: hsl(0, 0%, 100%);
+    width: 30%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    margin-left: 1.8rem;
+    align-self: flex-start;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    list-style-type: none;
+    align-self: flex-end;
+
+}
+
+a {
+    text-decoration: none;
+    color:  hsl(0, 0%, 98%);
+    margin: .8rem;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: roboto, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav_right{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10rem;
+}
+
+.active,
+.nav-element:hover {
+    color: hsl(300, 9%, 6%);
+    transition: .5s;
+}
+.fa-solid{
+    padding-top: 5px;
+    padding-left: 30px;
+}
+.fa-bell{
+    padding: 5px 6.5px;
+    color: #f1f1f1;
+}
+.fa-user{
+  font-size: 20px;
+  padding: 5px;
+}
+.btn-primary{
+    margin-right: 15px;
+    padding: 0;
+    background-color: #19111300;
+    border-color: #ece4e4;
+}
+.btn-primary:hover  {
+    background-color:rgb(127, 79, 108);
+    border-color: #555555;
+}
+.carousel-inner{
+    margin-top: 30px;
+    /* background-color: rgb(93, 93, 93); */
+  padding: 70px;
+
+
+
+}
+.carousel-inner .carousel-item h2{
+color: #060606;
+padding-top: 5px;
+padding-bottom: 60px;
+}
+.carousel-item p {
+    margin-left: 15rem;
+    color: #070707;
+    font-size: 20px;
+   font-weight: 700;
+   padding:0px 80px;
+   /* padding-right: 50px; */
+
+}
+.carousel-item button{
+    margin-left: 36rem;
+    color: #efeaea;
+    font-size: 20px;
+   font-weight: 700;
+
+}
+.carousel-control-next-icon , .carousel-control-prev-icon{
+   background-color: #060606;
+}
+
+.carousel-item button{
+    border-radius: 6px;
+   padding: 10px;
+ border-style: none;
+ background-color: #333333;
+}
+.header_content {
+
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color:  hsl(0, 0%, 7%);
+    line-height: 4.5rem;
+
+}
+
+.header_content h1 {
+    color: #e3dbdb;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header_content h5 {
+    color: #e3dbdb;
+    font-size: 25px;
+    font-weight: 200;
+    text-transform: capitalize;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header_content h4 {
+    color: #e3dbdb;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.content {
+    width: 100%;
+    height: 600px;
+    padding-top: 50px;
+    padding-left: 300px;
+    padding-right: 60px;
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 10px;
+    padding-top: 70px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    /* color: #f1f1f1; */
+
+}
+
+
+.feedback {
+    width: 100%;
+    line-height: 30px;
+}
+
+
+
+.user-feedback {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    background-color: #555555;
+    padding: 3rem;
+    border-radius: 7px;
+    color: #f1f1f1;
+}
+
+
+.download-2{
+    background-color:#333333;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+
+
+footer {
+    margin-top: 60px;
+    width: 100%;
+    background-color: #333333;
+    height: 200px;
+    text-align: center;
+    color: #ffff;
+    padding-top: 80px;
+    line-height: 30px;
+}
+
+p span {
+    color: #ff305b;
+}
+
+.fa-brands {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.fa-brands:hover {
+    color: #12af15;
+}
