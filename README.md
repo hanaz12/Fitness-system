@@ -99,5 +99,39 @@ Follow these steps to set up the project locally:
    git clone https://github.com/hanaz12/Fitness-system.git
 2. Navigate to the project directory:
    
-  cd Fitness-system  
+  cd Fitness-system
+  
+3. Install PHP dependencies:
+
+   composer install
+
+4. Install frontend dependencies (if applicable):
+
+  npm install  
+  
+5. Create a .env file and configure your environment variables:
+
+  cp .env.example .env  
+  
+6. Update the following in .env:
+
+    DB_DATABASE=your_database_name  
+    DB_USERNAME=your_database_user  
+    DB_PASSWORD=your_database_password
+   
+7. Generate an application key:
+
+php artisan key:generate  
+
+8. Run migrations to set up the database:
+
+php artisan migrate --seed  
+
+9. Start the development server:
+
+ php artisan serve 
+ 
+10. Access the application in your browser:
+
+http://localhost:8000  
    
