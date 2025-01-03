@@ -1,4 +1,4 @@
- <?php
+<?php
 
 use App\Http\Controllers\Controller;
 use App\Http\Middleware\CheckSession;
@@ -26,37 +26,8 @@ Route::delete('/notifications/clear/{id}', [NotificationController::class, 'clea
 
 
 
-// Route::get('/admin-dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
-// Route::get('/coaches-dashboard', [AdminController::class, 'coachesDashboard'])->name('coaches.dashboard');
-//  Route::get('/trainees-dashboard', [AdminController::class, 'traineesDashboard'])->name('trainees.dashboard');
-// Route::get('/packages-dashboard', [AdminController::class, 'packagesDashboard'])->name('packages.dashboard');
-
-// Route::get('/fail', function () {
-//     return view('fail'); // عرض صفحة الفشل
-// });
-
-// Route::get('/home', function () {
-//     return view('homePage'); // عرض صفحة الفشل
-// });
-
-// Route::get('/success', function () {
-//     return view('success');
-// });
-// Route::get('/adminModerator/delete/{id}', [AdminController::class, 'delete'])->name('admin.delete');
 
 
-// Route::post('/adminModerator/store', [AdminController::class, 'store'])->name('adminModerator.store');
-// Route::get('/trainee/delete/{id}', [traineeController::class, 'delete'])->name('trainee.delete');
-// Route::get('/trainee/edit/{id}', [traineeController::class, 'edit'])->name('trainee.edit');
-// Route::post('/trainee/update/{id}', [traineeController::class, 'update'])->name('trainee.update');
-//Route::get('/trainees-dashboard', [traineeController::class, 'index'])->name('trainees.dashboard');
-// Route::post('/admin/update/{id}', [AdminController::class, 'update'])->name('admin.update');
-// Route::post('/admin/update2/{id}', [AdminController::class, 'updatePersonalInfoOfAdmin'])->name('admin.update2');
-// Route::get('/coachesManagementDashboard', [CoachController::class, 'index'])->name('coaches.dashboard');
-// Route::post('/coach/store', [CoachController::class, 'store'])->name('coach.store');
-// Route::get('/coach/delete/{id}', [CoachController::class, 'delete'])->name('coach.delete');
-// Route::get('/coach/edit/{id}', [CoachController::class, 'edit'])->name('coach.edit');
-// Route::post('/coach/update/{id}', [CoachController::class, 'update'])->name('coach.update');
 
 
 
@@ -70,19 +41,6 @@ Route::get('/adminModeratorHomePage', [AdminController::class, 'index'])->name('
 Route::get('/coachHomePage', [CoachController::class, 'homepage'])->name('coachHomePage');
 
  });
-
-
-
-
-
-
-// Route::get('/packagesManagementDashboard', [PackageController::class, 'index'])->name('packages.dashboard');
-//  Route::post('/package/store', [PackageController::class, 'store'])->name('package.store');
-// Route::get('/package/delete/{id}', [packageController::class, 'delete'])->name('package.delete');
-// Route::get('/package/edit/{id}', [packageController::class, 'edit'])->name('package.edit');
-// Route::post('/package/update/{id}', [packageController::class, 'update'])->name('package.update');
-
-
 
 
 
