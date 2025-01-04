@@ -90,9 +90,8 @@ Follow these steps to set up the project locally:
 ### Prerequisites
 - **PHP**: >= 7.4
 - **Composer**: [Install Composer](https://getcomposer.org/)
-- **Node.js**: For frontend dependencies (optional, if using npm for CSS)
-- **Database**: MySQL, PostgreSQL, or any Laravel-supported database.
-
+- **Node.js**: For frontend dependencies 
+- **Database**: MySQL
 ### Steps
 1. Clone the repository:
    
@@ -121,11 +120,11 @@ Follow these steps to set up the project locally:
    
 7. Generate an application key:
 
-php artisan key:generate  
+  php artisan key:generate  
 
 8. Run migrations to set up the database:
 
-php artisan migrate --seed  
+ php artisan migrate --seed  
 
 9. Start the development server:
 
@@ -133,5 +132,5 @@ php artisan migrate --seed
  
 10. Access the application in your browser:
 
-http://localhost:8000  
+ http://localhost:8000  
    
