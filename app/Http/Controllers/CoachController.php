@@ -13,8 +13,8 @@ class CoachController extends Controller
 
     public function homepage()
 {
-    // الحصول على الـ coach_id من الـ session أو الـ auth
-    $coach_id = session('user_id'); // أو إذا كنت تستخدم auth، استخدم auth()->user()->id
+  
+    $coach_id = session('user_id');
 
     // جلب المتدربين الذين ينتمون إلى الباقة الخاصة بالكوتش
     $trainees = Trainee::with(['package', 'plan'])
@@ -22,11 +22,6 @@ class CoachController extends Controller
             $query->where('coach_id', $coach_id); // تصفية المتدربين الذين لديهم package مع coach_id الخاص بالكوتش
         })
         ->get();
-
-    // عرض معلومات المتدربين في الـ debug
-    // dd($trainees); // هذا سيسمح لك بفحص المتدربين المُسترجعين والعلاقات المرتبطة بهم
-
-    // تمرير البيانات إلى الـ view
     return view('coachHomePage', compact('trainees'));
 }
 
@@ -122,37 +117,16 @@ class CoachController extends Controller
             return back()->with('error', 'Failed to update Admin: ' . $e->getMessage());
         }
     }
-    // public function update(Request $request, $id)
-    // {
-    //     try {
-    //         $validated = $request->validate([
-    //             'first_name' => 'required|string|max:255',
-    //             'last_name' => 'required|string|max:255',
-    //             'email' => 'required|email|unique:coaches,email,' . $id,
-    //             'user_name' => 'required|string|max:255|unique:coaches,user_name,' . $id,
-    //             'phone' => 'required|numeric',
-    //             'address' => 'required|string',
-    //             'salary' => 'required|numeric',
-    //             'admin_id' => 'required|exists:admins,id',
-    //         ]);
-
-    //         $coach = Coach::findOrFail($id);
-    //         $coach->update($validated);
-    //         return redirect()->route('coaches.dashboard')->with('success', 'Coach updated successfully!');
-    //     } catch (\Exception $e) {
-    //         return back()->with('error', 'Failed to update Coach: ' . $e->getMessage());
-    //     }
-    // }
-
+    
 
 
     public function updateProfile(Request $request, $id)
     {
         try {
-            // جلب بيانات الكوتش بناءً على الـ id
+           
             $coach = Coach::findOrFail($id);
 
-            // التحقق من البيانات
+           
             $validated = $request->validate([
                 'first_name' => 'required|string|max:255',
                 'last_name' => 'required|string|max:255',
@@ -235,16 +209,7 @@ public function indexHelp()
     return view('manageTraineeCoachView', compact('trainee', 'plan'));
 }
 
-// public function delete($id)
-// {
-//     try {
-//         $coach = Coach::findOrFail($id);
-//         $coach->delete();
-//         return redirect()->route('coaches.dashboard')->with('success', 'Coach deleted successfully!');
-//     } catch (\Exception $e) {
-//         return redirect()->route('coaches.dashboard')->with('error', 'Failed to delete Coach: ' . $e->getMessage());
-//     }
-// }
+
 public function showAddForm(){
     return view('addNewCoachAdminView');
 }
