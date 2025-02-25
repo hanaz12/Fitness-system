@@ -7,49 +7,13 @@ use App\Models\AdminModerator;
 
 class AdminModeratorController extends Controller
 {
-    // // عرض الفورم
-    // public function create()
-    // {
-    //     return view('admin_moderator_form');
-    // }
-
+   
     public function addAdmin()
     {
         return view('addNewAdmin');
     }
 
-    // // تخزين البيانات
-    // public function store(Request $request)
-    // {
-    //     $validated = $request->validate([
-    //         'first_name' => 'required|string|max:255',
-    //         'last_name' => 'required|string|max:255',
-    //         'user_name' => 'required|string|max:255|unique:admin_moderators,user_name',
-    //         'email' => 'required|email|max:255|unique:admin_moderators,email',
-    //         'phone' => 'required|string|max:15',
-    //         'address' => 'required|string|max:255',
-    //        'password' => [
-    //         'required',
-    //         'string',
-    //         'min:6',
-    //         'regex:/[A-Z]/',
-    //         'regex:/[a-z]/',
-    //         'regex:/[0-9]/',
-    //         'regex:/[@$!%*?&#]/',
-    //         'address' => 'required|string|max:255'
-    //     ]], [
 
-    //         'user_name.unique' => 'The username is already taken. Please choose another one.',
-    //         'email.unique' => 'The email is already registered. Please use a different email address.',
-    //         'password.regex' => 'The password must include at least one uppercase letter, one lowercase letter, one number, and one special character.',
-    //     ]);
-
-    //     $validated['password'] = bcrypt($validated['password']); // تشفير كلمة المرور
-
-    //     AdminModerator::create($validated); // حفظ البيانات
-
-    //     return redirect()->route('test')->with('success', 'Admin Moderator added successfully!');
-    // }
     public function editAdminView($id)
     {
         try {
