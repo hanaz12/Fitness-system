@@ -67,26 +67,7 @@ class AdminController extends Controller
         }
     }
 
-    /**
-     * Delete the specified Admin from the database.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    // public function delete($id)
-    // {
-    //     try {
-    //         // Find and delete the admin by ID
-    //         $admin = Admin::findOrFail($id);
-    //         $admin->delete();
-
-    //         // Redirect back with success message
-    //         return redirect()->route('adminModeratorHomePage')->with('success', 'Admin deleted successfully!');
-    //     } catch (\Exception $e) {
-    //         // Redirect back with error message if the deletion fails
-    //         return redirect()->route('adminModeratorHomePage')->with('error', 'Failed to delete Admin: ' . $e->getMessage());
-    //     }
-    // }
+   
 
     public function edit($id)
     {
@@ -206,100 +187,6 @@ class AdminController extends Controller
 
 
 
-// public function updatePersonalInfoOfAdmin(Request $request, $id)
-// {
-//     try {
-//         // Validate the incoming request for Admin updating their own personal info
-//         $validated = $request->validate([
-//             'first_name' => 'required|string|max:255',
-//             'last_name' => 'required|string|max:255',
-//             'email' => 'required|email|unique:admins,email,' . $id,
-//             'user_name' => 'required|string|max:255|unique:admins,user_name,' . $id,
-//             'phone' => 'required|numeric',
-//             'address' => 'required|string',
-//             'salary' => 'nullable|numeric',
-//             'password' => 'nullable|string|min:6',
-//         ]);
-
-//         // Find the admin by ID
-//         $admin = Admin::findOrFail($id);
-
-//         // If password is provided, do not hash it, just update it directly
-//         if ($request->filled('password')) {
-//             $validated['password'] = $request->password; // Do not use bcrypt here
-//         } else {
-//             // If no password is provided, remove it from the validated data
-//             unset($validated['password']);
-//         }
-
-//         // Update the admin data with the validated information
-//         $admin->update($validated);
-
-//         // Redirect to the Admin Home Page
-//         return redirect()->route('adminHomePage')->with('success', 'Your personal info updated successfully!');
-//     } catch (\Exception $e) {
-//         return back()->with('error', 'Failed to update Admin: ' . $e->getMessage());
-//     }
-// }
-// public function updatePassword(Request $request, $id)
-// {
-//     try {
-
-//         $request->validate([
-//             'password' => [
-//                 'required',
-//                 'string',
-//                 'min:6', // Minimum length
-//                 'regex:/[A-Z]/', // At least one uppercase letter
-//                 'regex:/[a-z]/', // At least one lowercase letter
-//                 'regex:/[0-9]/', // At least one number
-//                 'regex:/[@$!%*?&#]/', // At least one special character
-//                 'confirmed', // Password confirmation
-//             ],
-//         ], [
-//             // رسائل خطأ مخصصة
-//             'password.regex' => 'The password must include at least one uppercase letter, one lowercase letter, one number, and one special character.',
-//         ]);
-
-//         // استرجاع بيانات الترينى
-//         $admin = Admin::findOrFail($id);
-
-//         // تحديث كلمة المرور
-//         $admin->update([
-//             'password' => bcrypt($request->input('password')),
-//         ]);
-
-//         return back()->with('success', 'Password updated successfully.');
-
-//     } catch (\Exception $e) {
-//         return back()->with('error', 'Failed to update password: ' . $e->getMessage());
-//     }
-// }
-
-
-
-
-
-
-    // public function coachesDashboard()
-    // {
-    //     return view('coachesManagementDashboard');
-    // }
-
-    // public function traineesDashboard()
-    // {
-    //     return view('traineesManagementDashboard');
-    // }
-
-    // public function packagesDashboard()
-    // {
-    //     return view('packagesManagementDashboard');
-    // }
-
-    // public function updateInfo(){
-    //     return view ('editAdminInfoAdminView');
-    // }
-
 
     public function homePage()
     {
@@ -371,19 +258,10 @@ public function unblockAdmin($id)
     }
 
 
-    // public function showPlans()
-    // {
-    //     return view('plansViewOfAdminHomePage');
-    // }
-
-
-
     public function trainees()
     {
-        // استرجاع البيانات من الـ view الذي أنشأناه في قاعدة البيانات
+      
         $trainees = DB::table('trainee_package_plan_view')->get();
-
-        // إرجاع الـ view مع البيانات
         return view('traineesAdminView', compact('trainees'));
     }
 
